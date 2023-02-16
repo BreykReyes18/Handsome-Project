@@ -33,14 +33,15 @@
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.btn_apagar = new System.Windows.Forms.PictureBox();
             this.panel_contenedor1 = new System.Windows.Forms.Panel();
-            this.dgv_usuarios = new System.Windows.Forms.DataGridView();
             this.img_menu = new System.Windows.Forms.PictureBox();
+            this.dgv_usuarios = new System.Windows.Forms.DataGridView();
+            this.btn_Checklist = new System.Windows.Forms.Button();
             this.panel_opciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_apagar)).BeginInit();
             this.panel_contenedor1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_menu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_opciones
@@ -49,6 +50,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_opciones.BackColor = System.Drawing.Color.White;
+            this.panel_opciones.Controls.Add(this.btn_Checklist);
             this.panel_opciones.Controls.Add(this.btn_mostrar);
             this.panel_opciones.Controls.Add(this.btn_regresar);
             this.panel_opciones.Controls.Add(this.btn_apagar);
@@ -61,10 +63,12 @@
             // btn_mostrar
             // 
             this.btn_mostrar.BackColor = System.Drawing.Color.White;
+            this.btn_mostrar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_mostrar.FlatAppearance.BorderSize = 0;
             this.btn_mostrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.btn_mostrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.btn_mostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mostrar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn_mostrar.Location = new System.Drawing.Point(0, 0);
             this.btn_mostrar.Name = "btn_mostrar";
             this.btn_mostrar.Size = new System.Drawing.Size(184, 31);
@@ -110,6 +114,20 @@
             this.panel_contenedor1.Size = new System.Drawing.Size(545, 391);
             this.panel_contenedor1.TabIndex = 1;
             // 
+            // img_menu
+            // 
+            this.img_menu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.img_menu.Image = global::prueba.Properties.Resources.handsoll_BLOQ_IT;
+            this.img_menu.Location = new System.Drawing.Point(-2, 39);
+            this.img_menu.Name = "img_menu";
+            this.img_menu.Size = new System.Drawing.Size(545, 312);
+            this.img_menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_menu.TabIndex = 0;
+            this.img_menu.TabStop = false;
+            this.img_menu.Click += new System.EventHandler(this.img_menu_Click);
+            // 
             // dgv_usuarios
             // 
             this.dgv_usuarios.AllowUserToAddRows = false;
@@ -125,19 +143,20 @@
             this.dgv_usuarios.TabIndex = 1;
             this.dgv_usuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_usuarios_CellContentClick);
             // 
-            // img_menu
+            // btn_Checklist
             // 
-            this.img_menu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.img_menu.Image = global::prueba.Properties.Resources.handsoll_BLOQ_IT;
-            this.img_menu.Location = new System.Drawing.Point(-2, 39);
-            this.img_menu.Name = "img_menu";
-            this.img_menu.Size = new System.Drawing.Size(545, 312);
-            this.img_menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_menu.TabIndex = 0;
-            this.img_menu.TabStop = false;
-            this.img_menu.Click += new System.EventHandler(this.img_menu_Click);
+            this.btn_Checklist.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Checklist.FlatAppearance.BorderSize = 0;
+            this.btn_Checklist.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Checklist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Checklist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Checklist.Location = new System.Drawing.Point(0, 31);
+            this.btn_Checklist.Name = "btn_Checklist";
+            this.btn_Checklist.Size = new System.Drawing.Size(184, 23);
+            this.btn_Checklist.TabIndex = 3;
+            this.btn_Checklist.Text = "Check_List";
+            this.btn_Checklist.UseVisualStyleBackColor = true;
+            this.btn_Checklist.Click += new System.EventHandler(this.btn_Checklist_Click);
             // 
             // frm_menu
             // 
@@ -157,8 +176,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_apagar)).EndInit();
             this.panel_contenedor1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_menu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -172,5 +191,6 @@
         private System.Windows.Forms.PictureBox btn_regresar;
         private System.Windows.Forms.Button btn_mostrar;
         private System.Windows.Forms.DataGridView dgv_usuarios;
+        private System.Windows.Forms.Button btn_Checklist;
     }
 }

@@ -25,7 +25,7 @@ namespace prueba
         private void frm_checklist_Load(object sender, EventArgs e)
         {
 
-            this.reportViewer1.RefreshReport();
+         
         }
     }
 }

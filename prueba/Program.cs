@@ -16,7 +16,7 @@ namespace prueba
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_checklist());
+            Application.Run(new frm_prueba());
         }
     }
 }

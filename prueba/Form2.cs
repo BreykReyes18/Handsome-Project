@@ -66,5 +66,12 @@ namespace prueba
             this.dgv_usuarios.Hide();
             dgv_usuarios.Show();
         }
+
+        private void btn_Checklist_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frm_checklist frm_checklist = new frm_checklist();
+            frm_checklist.Show();
+        }
     }
 }

@@ -41,11 +41,10 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_encabezado
@@ -64,9 +63,9 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(24, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 15);
+            this.label1.Size = new System.Drawing.Size(32, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "NVR codigo de NVR";
+            this.label1.Text = "NVR";
             // 
             // label2
             // 
@@ -164,19 +163,10 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.reportViewer1);
             this.panel2.Location = new System.Drawing.Point(27, 425);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(783, 200);
             this.panel2.TabIndex = 9;
-            // 
-            // reportViewer1
-            // 
-            this.reportViewer1.Location = new System.Drawing.Point(351, -49);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
-            this.reportViewer1.TabIndex = 13;
             // 
             // label5
             // 
@@ -198,6 +188,13 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Elementos Reproductores de Imagen";
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(149, 62);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(123, 20);
+            this.textBox3.TabIndex = 13;
+            // 
             // frm_checklist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,6 +202,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(822, 695);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel2);
@@ -220,7 +218,6 @@
             this.Load += new System.EventHandler(this.frm_checklist_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,6 +240,6 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
