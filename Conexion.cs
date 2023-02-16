@@ -10,7 +10,7 @@ namespace DB_MAPR
         private SqlConnection connection;
 
         // Cadena de conexión a la base de datos
-        private string connectionString = "Data Source=();Initial Catalog=DB_MAPR;Integrated Security=True";
+        private string connectionString = "Data Source=172.30.240.56;Initial Catalog=DB_MAPR;Integrated Security=True";
 
         // Constructor de la clase, inicializa la conexión a la base de datos
         public Conexion()
