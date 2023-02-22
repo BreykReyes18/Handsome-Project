@@ -27,5 +27,17 @@ namespace prueba
 
          
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Regresar2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frm_menu frm_menu = new frm_menu();
+            frm_menu.Show();
+        }
     }
 }

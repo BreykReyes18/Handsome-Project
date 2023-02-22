@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel_opciones = new System.Windows.Forms.Panel();
+            this.btn_Checklist = new System.Windows.Forms.Button();
             this.btn_mostrar = new System.Windows.Forms.Button();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.btn_apagar = new System.Windows.Forms.PictureBox();
             this.panel_contenedor1 = new System.Windows.Forms.Panel();
             this.img_menu = new System.Windows.Forms.PictureBox();
             this.dgv_usuarios = new System.Windows.Forms.DataGridView();
-            this.btn_Checklist = new System.Windows.Forms.Button();
             this.panel_opciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_apagar)).BeginInit();
@@ -60,15 +60,35 @@
             this.panel_opciones.TabIndex = 0;
             this.panel_opciones.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_opciones_Paint);
             // 
+            // btn_Checklist
+            // 
+            this.btn_Checklist.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Checklist.BackColor = System.Drawing.Color.White;
+            this.btn_Checklist.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Checklist.FlatAppearance.BorderSize = 0;
+            this.btn_Checklist.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Checklist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Checklist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Checklist.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Checklist.Location = new System.Drawing.Point(0, 31);
+            this.btn_Checklist.Name = "btn_Checklist";
+            this.btn_Checklist.Size = new System.Drawing.Size(184, 23);
+            this.btn_Checklist.TabIndex = 3;
+            this.btn_Checklist.Text = "Check_List";
+            this.btn_Checklist.UseVisualStyleBackColor = true;
+            this.btn_Checklist.Click += new System.EventHandler(this.btn_Checklist_Click);
+            // 
             // btn_mostrar
             // 
+            this.btn_mostrar.AutoEllipsis = true;
+            this.btn_mostrar.AutoSize = true;
             this.btn_mostrar.BackColor = System.Drawing.Color.White;
             this.btn_mostrar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_mostrar.FlatAppearance.BorderSize = 0;
             this.btn_mostrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.btn_mostrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.btn_mostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_mostrar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_mostrar.ForeColor = System.Drawing.Color.Black;
             this.btn_mostrar.Location = new System.Drawing.Point(0, 0);
             this.btn_mostrar.Name = "btn_mostrar";
             this.btn_mostrar.Size = new System.Drawing.Size(184, 31);
@@ -143,21 +163,6 @@
             this.dgv_usuarios.TabIndex = 1;
             this.dgv_usuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_usuarios_CellContentClick);
             // 
-            // btn_Checklist
-            // 
-            this.btn_Checklist.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Checklist.FlatAppearance.BorderSize = 0;
-            this.btn_Checklist.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Checklist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Checklist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Checklist.Location = new System.Drawing.Point(0, 31);
-            this.btn_Checklist.Name = "btn_Checklist";
-            this.btn_Checklist.Size = new System.Drawing.Size(184, 23);
-            this.btn_Checklist.TabIndex = 3;
-            this.btn_Checklist.Text = "Check_List";
-            this.btn_Checklist.UseVisualStyleBackColor = true;
-            this.btn_Checklist.Click += new System.EventHandler(this.btn_Checklist_Click);
-            // 
             // frm_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,6 +178,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel_opciones.ResumeLayout(false);
+            this.panel_opciones.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_apagar)).EndInit();
             this.panel_contenedor1.ResumeLayout(false);
