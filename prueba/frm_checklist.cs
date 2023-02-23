@@ -39,5 +39,10 @@ namespace prueba
             frm_menu frm_menu = new frm_menu();
             frm_menu.Show();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

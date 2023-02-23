@@ -34,11 +34,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chbx_cam_bien = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chbx_cam_mal = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -48,15 +46,35 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.btn_Regresar2 = new System.Windows.Forms.PictureBox();
+            this.btn_reporte_cam = new System.Windows.Forms.PictureBox();
+            this.btn_actualizar_cam = new System.Windows.Forms.PictureBox();
+            this.btn_limpiar_cam = new System.Windows.Forms.PictureBox();
+            this.btn_guardar_cam = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Regresar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_reporte_cam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_actualizar_cam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar_cam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_guardar_cam)).BeginInit();
             this.SuspendLayout();
             // 
             // label_encabezado
@@ -85,9 +103,9 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(741, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 15);
+            this.label2.Size = new System.Drawing.Size(49, 15);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Fecha de verificacion:";
+            this.label2.Text = "Eliminar";
             // 
             // textBox1
             // 
@@ -113,62 +131,59 @@
             this.textBox2.Size = new System.Drawing.Size(123, 20);
             this.textBox2.TabIndex = 5;
             // 
-            // checkBox1
+            // chbx_cam_bien
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(122, 25);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chbx_cam_bien.AutoSize = true;
+            this.chbx_cam_bien.Location = new System.Drawing.Point(15, 181);
+            this.chbx_cam_bien.Name = "chbx_cam_bien";
+            this.chbx_cam_bien.Size = new System.Drawing.Size(47, 17);
+            this.chbx_cam_bien.TabIndex = 7;
+            this.chbx_cam_bien.Text = "Bien";
+            this.chbx_cam_bien.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.checkBox4);
-            this.panel1.Controls.Add(this.checkBox3);
-            this.panel1.Controls.Add(this.checkBox2);
+            this.panel1.Controls.Add(this.btn_reporte_cam);
+            this.panel1.Controls.Add(this.btn_actualizar_cam);
+            this.panel1.Controls.Add(this.btn_limpiar_cam);
+            this.panel1.Controls.Add(this.btn_guardar_cam);
+            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.checkBox1);
-            this.panel1.Location = new System.Drawing.Point(27, 175);
+            this.panel1.Controls.Add(this.checkBox2);
+            this.panel1.Controls.Add(this.checkBox3);
+            this.panel1.Controls.Add(this.checkBox4);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.checkBox11);
+            this.panel1.Controls.Add(this.checkBox12);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.chbx_cam_mal);
+            this.panel1.Controls.Add(this.chbx_cam_bien);
+            this.panel1.Location = new System.Drawing.Point(27, 150);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(498, 263);
+            this.panel1.Size = new System.Drawing.Size(498, 306);
             this.panel1.TabIndex = 8;
             // 
-            // checkBox4
+            // chbx_cam_mal
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(122, 68);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(80, 17);
-            this.checkBox4.TabIndex = 11;
-            this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(333, 25);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(80, 17);
-            this.checkBox3.TabIndex = 10;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(333, 68);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 9;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chbx_cam_mal.AutoSize = true;
+            this.chbx_cam_mal.Location = new System.Drawing.Point(83, 181);
+            this.chbx_cam_mal.Name = "chbx_cam_mal";
+            this.chbx_cam_mal.Size = new System.Drawing.Size(43, 17);
+            this.chbx_cam_mal.TabIndex = 11;
+            this.chbx_cam_mal.Text = "Mal";
+            this.chbx_cam_mal.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(29, 138);
+            this.label5.Location = new System.Drawing.Point(29, 125);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 22);
             this.label5.TabIndex = 11;
@@ -180,9 +195,9 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(642, 138);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(311, 22);
+            this.label4.Size = new System.Drawing.Size(357, 22);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Elementos Reproductores de Imagen";
+            this.label4.Text = "Elementos Reproductores de Imagen DVR";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox3
@@ -229,61 +244,166 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 462);
+            this.dataGridView1.Location = new System.Drawing.Point(27, 462);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1067, 194);
+            this.dataGridView1.Size = new System.Drawing.Size(498, 194);
             this.dataGridView1.TabIndex = 18;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.checkBox5);
-            this.panel2.Controls.Add(this.checkBox6);
-            this.panel2.Controls.Add(this.checkBox7);
-            this.panel2.Controls.Add(this.checkBox8);
             this.panel2.Location = new System.Drawing.Point(589, 175);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(488, 263);
             this.panel2.TabIndex = 19;
             // 
-            // checkBox5
+            // dataGridView2
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(122, 68);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(80, 17);
-            this.checkBox5.TabIndex = 11;
-            this.checkBox5.Text = "checkBox5";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(589, 462);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(488, 194);
+            this.dataGridView2.TabIndex = 21;
             // 
-            // checkBox6
+            // textBox6
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(333, 25);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(80, 17);
-            this.checkBox6.TabIndex = 10;
-            this.checkBox6.Text = "checkBox6";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.textBox6.Location = new System.Drawing.Point(165, 69);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(315, 20);
+            this.textBox6.TabIndex = 12;
             // 
-            // checkBox7
+            // label8
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(333, 68);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(80, 17);
-            this.checkBox7.TabIndex = 9;
-            this.checkBox7.Text = "checkBox7";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(12, 71);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(138, 15);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Lugar de la Camara:";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // checkBox8
+            // label9
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(122, 25);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(80, 17);
-            this.checkBox8.TabIndex = 7;
-            this.checkBox8.Text = "checkBox8";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(12, 112);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(310, 17);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Captadores de Imagen /Circuitos Electronicos";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(12, 150);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(95, 13);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Calidad de Imagen";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(173, 150);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(160, 13);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Distancia Focal (Angulo y Zoom)";
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(243, 181);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(43, 17);
+            this.checkBox11.TabIndex = 25;
+            this.checkBox11.Text = "Mal";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Location = new System.Drawing.Point(175, 181);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(47, 17);
+            this.checkBox12.TabIndex = 24;
+            this.checkBox12.Text = "Bien";
+            this.checkBox12.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(12, 211);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(115, 13);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "Carcasa de Proteccion";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(173, 211);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(167, 13);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "Soportes posicionadores y Domos";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(244, 244);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(43, 17);
+            this.checkBox1.TabIndex = 31;
+            this.checkBox1.Text = "Mal";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(176, 244);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(47, 17);
+            this.checkBox2.TabIndex = 30;
+            this.checkBox2.Text = "Bien";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(84, 244);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(43, 17);
+            this.checkBox3.TabIndex = 29;
+            this.checkBox3.Text = "Mal";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(16, 244);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(47, 17);
+            this.checkBox4.TabIndex = 28;
+            this.checkBox4.Text = "Bien";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(13, 37);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(130, 15);
+            this.label14.TabIndex = 34;
+            this.label14.Text = "Codigo de Camara:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(165, 32);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(123, 20);
+            this.textBox7.TabIndex = 22;
             // 
             // btn_Regresar2
             // 
@@ -296,13 +416,54 @@
             this.btn_Regresar2.TabStop = false;
             this.btn_Regresar2.Click += new System.EventHandler(this.btn_Regresar2_Click);
             // 
+            // btn_reporte_cam
+            // 
+            this.btn_reporte_cam.Image = global::prueba.Properties.Resources.Reporte;
+            this.btn_reporte_cam.Location = new System.Drawing.Point(345, 181);
+            this.btn_reporte_cam.Name = "btn_reporte_cam";
+            this.btn_reporte_cam.Size = new System.Drawing.Size(65, 59);
+            this.btn_reporte_cam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_reporte_cam.TabIndex = 38;
+            this.btn_reporte_cam.TabStop = false;
+            // 
+            // btn_actualizar_cam
+            // 
+            this.btn_actualizar_cam.Image = global::prueba.Properties.Resources.Actualizar;
+            this.btn_actualizar_cam.Location = new System.Drawing.Point(427, 181);
+            this.btn_actualizar_cam.Name = "btn_actualizar_cam";
+            this.btn_actualizar_cam.Size = new System.Drawing.Size(53, 51);
+            this.btn_actualizar_cam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_actualizar_cam.TabIndex = 37;
+            this.btn_actualizar_cam.TabStop = false;
+            // 
+            // btn_limpiar_cam
+            // 
+            this.btn_limpiar_cam.Image = global::prueba.Properties.Resources.Limpiar;
+            this.btn_limpiar_cam.Location = new System.Drawing.Point(351, 246);
+            this.btn_limpiar_cam.Name = "btn_limpiar_cam";
+            this.btn_limpiar_cam.Size = new System.Drawing.Size(59, 51);
+            this.btn_limpiar_cam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_limpiar_cam.TabIndex = 36;
+            this.btn_limpiar_cam.TabStop = false;
+            // 
+            // btn_guardar_cam
+            // 
+            this.btn_guardar_cam.Image = global::prueba.Properties.Resources.Guardar;
+            this.btn_guardar_cam.Location = new System.Drawing.Point(427, 246);
+            this.btn_guardar_cam.Name = "btn_guardar_cam";
+            this.btn_guardar_cam.Size = new System.Drawing.Size(53, 51);
+            this.btn_guardar_cam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_guardar_cam.TabIndex = 35;
+            this.btn_guardar_cam.TabStop = false;
+            // 
             // frm_checklist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1112, 695);
+            this.ClientSize = new System.Drawing.Size(1112, 711);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.btn_Regresar2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
@@ -326,9 +487,12 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Regresar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_reporte_cam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_actualizar_cam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar_cam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_guardar_cam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -342,13 +506,11 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chbx_cam_bien;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox chbx_cam_mal;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -356,10 +518,26 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.PictureBox btn_Regresar2;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.PictureBox btn_limpiar_cam;
+        private System.Windows.Forms.PictureBox btn_guardar_cam;
+        private System.Windows.Forms.PictureBox btn_actualizar_cam;
+        private System.Windows.Forms.PictureBox btn_reporte_cam;
     }
 }

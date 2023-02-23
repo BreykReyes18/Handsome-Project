@@ -134,6 +134,10 @@
     <None Include="Resources\regresar.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Guardar.png" />
+    <None Include="Resources\Limpiar.png" />
+    <None Include="Resources\Actualizar.png" />
+    <None Include="Resources\Reporte.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
