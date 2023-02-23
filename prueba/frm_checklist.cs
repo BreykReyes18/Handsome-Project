@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Microsoft.ReportingServices.Diagnostics.Internal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,10 +14,13 @@ namespace prueba
 {
     public partial class frm_checklist : Form
     {
+
         public frm_checklist()
         {
             InitializeComponent();
         }
+
+        private string connectionString = "Data Source=172.30.240.56;Initial Catalog=DB_MAPR;Integrated Security=True";
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -24,7 +29,12 @@ namespace prueba
 
         private void frm_checklist_Load(object sender, EventArgs e)
         {
+            string consulta = "select * from CAM";
+            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, connectionString);
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
 
+            dgv_cam.DataSource= dt;
          
         }
 

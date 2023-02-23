@@ -44,9 +44,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgv_cam = new System.Windows.Forms.DataGridView();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -62,14 +60,18 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Regresar2 = new System.Windows.Forms.PictureBox();
             this.btn_reporte_cam = new System.Windows.Forms.PictureBox();
             this.btn_actualizar_cam = new System.Windows.Forms.PictureBox();
             this.btn_limpiar_cam = new System.Windows.Forms.PictureBox();
             this.btn_guardar_cam = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_cam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Regresar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_reporte_cam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_actualizar_cam)).BeginInit();
@@ -101,7 +103,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(741, 67);
+            this.label2.Location = new System.Drawing.Point(592, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 15);
             this.label2.TabIndex = 2;
@@ -109,7 +111,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(870, 62);
+            this.textBox1.Location = new System.Drawing.Point(704, 67);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(123, 20);
             this.textBox1.TabIndex = 3;
@@ -166,7 +168,7 @@
             this.panel1.Controls.Add(this.chbx_cam_bien);
             this.panel1.Location = new System.Drawing.Point(27, 150);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(498, 306);
+            this.panel1.Size = new System.Drawing.Size(486, 301);
             this.panel1.TabIndex = 8;
             // 
             // chbx_cam_mal
@@ -193,7 +195,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(642, 138);
+            this.label4.Location = new System.Drawing.Point(591, 125);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(357, 22);
             this.label4.TabIndex = 12;
@@ -241,28 +243,13 @@
             this.textBox5.Size = new System.Drawing.Size(123, 20);
             this.textBox5.TabIndex = 16;
             // 
-            // dataGridView1
+            // dgv_cam
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 462);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(498, 194);
-            this.dataGridView1.TabIndex = 18;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(589, 175);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(488, 263);
-            this.panel2.TabIndex = 19;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(589, 462);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(488, 194);
-            this.dataGridView2.TabIndex = 21;
+            this.dgv_cam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_cam.Location = new System.Drawing.Point(33, 481);
+            this.dgv_cam.Name = "dgv_cam";
+            this.dgv_cam.Size = new System.Drawing.Size(486, 189);
+            this.dgv_cam.TabIndex = 18;
             // 
             // textBox6
             // 
@@ -405,6 +392,31 @@
             this.textBox7.Size = new System.Drawing.Size(123, 20);
             this.textBox7.TabIndex = 22;
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(557, 481);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(476, 189);
+            this.dataGridView2.TabIndex = 21;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(548, 182);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(485, 248);
+            this.panel2.TabIndex = 19;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::prueba.Properties.Resources.Eliminar;
+            this.pictureBox1.Location = new System.Drawing.Point(861, 52);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
             // btn_Regresar2
             // 
             this.btn_Regresar2.Image = global::prueba.Properties.Resources.regresar;
@@ -460,13 +472,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1112, 711);
+            this.ClientSize = new System.Drawing.Size(1044, 689);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.btn_Regresar2);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_cam);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label7);
@@ -482,12 +494,14 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_encabezado);
             this.Name = "frm_checklist";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_checklist";
             this.Load += new System.EventHandler(this.frm_checklist_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_cam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Regresar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_reporte_cam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_actualizar_cam)).EndInit();
@@ -516,10 +530,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dgv_cam;
         private System.Windows.Forms.PictureBox btn_Regresar2;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox6;
@@ -539,5 +551,8 @@
         private System.Windows.Forms.PictureBox btn_guardar_cam;
         private System.Windows.Forms.PictureBox btn_actualizar_cam;
         private System.Windows.Forms.PictureBox btn_reporte_cam;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
