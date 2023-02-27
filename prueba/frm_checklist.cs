@@ -20,7 +20,7 @@ namespace prueba
             InitializeComponent();
         }
 
-        private string connectionString = "Data Source=srv-data2;Initial Catalog=DB_MAPR;Integrated Security=True";
+        private string  = "Data Source=srv-data2;Initial Catalog=DB_MAPR;Integrated Security=True";
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -29,13 +29,15 @@ namespace prueba
 
         private void frm_checklist_Load(object sender, EventArgs e, object dt)
         {
-            string consulta = "select * from CAM";
-            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, connectionString);
-            DataTable dt = new DataTable();
-            adaptador.Fill(dt);
+            conexionbd conecct = 
+            //string consulta = "select * from CAM";
+            //SqlDataAdapter adaptador = new SqlDataAdapter(consulta, connectionString);
+            //DataTable dataTable = new DataTable();
+            //DataTable datatable = dataTable;
+            //adaptador.Fill(datatable);
 
-            dgv_cam.DataSource= dt;
-         
+            //dgv_cam.DataSource= dt;
+
         }
 
         private void label4_Click(object sender, EventArgs e)

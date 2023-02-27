@@ -497,7 +497,6 @@
             this.Name = "frm_checklist";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_checklist";
-            this.Load += new System.EventHandler(this.frm_checklist_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_reporte_cam)).EndInit();

@@ -5,18 +5,42 @@ using System.Data.SqlClient;
 
 namespace DB_MAPR
 {
-    class Conexion
+    class Conexionbd
     {
-        private SqlConnection connection;
+        string cadena = "Data Source=srv-data2;Initial Catalog=DB_MAPR;Integrated Security=True";
+        public SqlConnection conectarbd = new SqlConecction();
 
-        // Cadena de conexión a la base de datos
-        private string connectionString = "Data Source=172.30.240.56;Initial Catalog=DB_MAPR;Integrated Security=True";
-
-        // Constructor de la clase, inicializa la conexión a la base de datos
-        public Conexion()
+        public Conexionbd()
         {
-            connection = new SqlConnection(connectionString);
+            conectarbd.ConnectionString = cadena;
         }
+
+        public void abrir()
+        {
+            try
+            {
+                conectarbd.open();
+                Console.WriteLine("Conexion Exitosa")
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Fallo de conexion"ex.Message);
+            }
+        }
+
+        public void cerrar()
+        {
+            conectarbd.close();
+        }
+        }
+
+
+
+
+
+
+
+
 
         // Método para insertar un nuevo registro en la tabla DVR
         public void insertar_dvr(string descripcion)
