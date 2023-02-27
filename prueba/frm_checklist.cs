@@ -20,7 +20,7 @@ namespace prueba
             InitializeComponent();
         }
 
-        private string connectionString = "Data Source=172.30.240.56;Initial Catalog=DB_MAPR;Integrated Security=True";
+        private string connectionString = "Data Source=handsome-data;Initial Catalog=DB_MAPR;Integrated Security=True";
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -51,6 +51,11 @@ namespace prueba
         }
 
         private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_cam_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
