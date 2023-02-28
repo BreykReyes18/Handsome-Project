@@ -5,13 +5,6 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prueba", "prueba\prueba.csproj", "{BEB6B6DB-8A4E-48BB-BE7B-104584A947A5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{F389EF2B-D8A9-4A76-87F2-C32D6781EF89}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConectionString", "ConectionString", "{D9BDB226-95CC-4883-9D6C-DBE3CEC16AE7}"
-	ProjectSection(SolutionItems) = preProject
-		Conexion.cs = Conexion.cs
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

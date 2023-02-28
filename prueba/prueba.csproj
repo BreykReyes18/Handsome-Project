@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="conexionbd.cs" />
     <Compile Include="frm_inicio.cs">
       <SubType>Form</SubType>
     </Compile>

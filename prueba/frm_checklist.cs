@@ -1,3 +1,4 @@
+﻿using DB_MAPR;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,27 +19,11 @@ namespace prueba
         {
             InitializeComponent();
         }
-
-        private string  = "Data Source=srv-data2;Initial Catalog=DB_MAPR;Integrated Security=True";
-
-        private void timer1_Tick(object sender, EventArgs e)
+        private void frm_checklist_Load(object sender, EventArgs e)
         {
-
+            conexionbd conexion = new conexionbd();
+            conexion.abrir();
         }
-
-        private void frm_checklist_Load(object sender, EventArgs e, object dt)
-        {
-            conexionbd conecct = 
-            //string consulta = "select * from CAM";
-            //SqlDataAdapter adaptador = new SqlDataAdapter(consulta, connectionString);
-            //DataTable dataTable = new DataTable();
-            //DataTable datatable = dataTable;
-            //adaptador.Fill(datatable);
-
-            //dgv_cam.DataSource= dt;
-
-        }
-
         private void label4_Click(object sender, EventArgs e)
         {
 
