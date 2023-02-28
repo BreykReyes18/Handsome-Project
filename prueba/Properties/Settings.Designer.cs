@@ -26,19 +26,22 @@ namespace prueba.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=srv-data2;Initial Catalog=DB_MAPR;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-S8V6F3S\\SQLEXPRESS;Initial Catalog=DB_MAPR;Integrated Securit" +
+            "y=True")]
         public string connectionString {
             get {
                 return ((string)(this["connectionString"]));
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        public string connection {
+        public global::System.Data.SqlClient.SqlConnection connection {
             get {
-                return ((string)(this["connection"]));
+                return ((global::System.Data.SqlClient.SqlConnection)(this["connection"]));
+            }
+            set {
+                this["connection"] = value;
             }
         }
     }

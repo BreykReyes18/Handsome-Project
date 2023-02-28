@@ -45,5 +45,14 @@ namespace prueba
         {
 
         }
+
+        private void frm_checklist_Load_1(object sender, EventArgs e)
+        {
+            string consulta = "select * form CHK_LIST";
+            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, );
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+            dgv_cam.DataSource = dt;
+        }
     }
 }

@@ -9,6 +9,7 @@ namespace DB_MAPR
 {
     internal class conexionbd
     {
+        
         string cadena = "Data Source=DESKTOP-S8V6F3S\\SQLEXPRESS;Initial Catalog=DB_MAPR;Integrated Security=True";
         public SqlConnection conectarbd = new SqlConnection();
         public conexionbd()
@@ -19,13 +20,13 @@ namespace DB_MAPR
         public void abrir()
         {
             try
-            {
+            {                
                 conectarbd.Open();
                 Console.WriteLine("Conexion Exitosa");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Eror de Conexion" + ex.Message);
+                Console.WriteLine("Error de Conexion" + ex.Message);
             }
         }
 
