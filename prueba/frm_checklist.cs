@@ -19,11 +19,6 @@ namespace prueba
         {
             InitializeComponent();
         }
-        private void frm_checklist_Load(object sender, EventArgs e)
-        {
-            conexionbd conexion = new conexionbd();
-            conexion.abrir();
-        }
         private void label4_Click(object sender, EventArgs e)
         {
 
@@ -48,11 +43,13 @@ namespace prueba
 
         private void frm_checklist_Load_1(object sender, EventArgs e)
         {
-            string consulta = "select * form CHK_LIST";
-            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, );
-            DataTable dt = new DataTable();
-            adaptador.Fill(dt);
-            dgv_cam.DataSource = dt;
+            //conexionbd conexion = new conexionbd();
+            //conexion.abrir();
+            //string consulta = "select * form CHK_LIST";
+            //SqlDataAdapter adaptador = new SqlDataAdapter(consulta, conexionbd);
+            //DataTable dt = new DataTable();
+            //adaptador.Fill(dt);
+            //dgv_cam.DataSource = dt;
         }
     }
 }

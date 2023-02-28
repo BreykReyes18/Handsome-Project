@@ -9,8 +9,7 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=DESKTOP-S8V6F3S\SQLEXPRESS;Initial Catalog=DB_MAPR;Integrated Security=True</Value>
     </Setting>
-    <Setting Name="connection" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)" />
+    <Setting Name="connection" Type="System.Data.SqlClient.SqlConnection" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>
