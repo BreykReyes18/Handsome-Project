@@ -49,5 +49,10 @@ namespace prueba
             TxtUser.Clear();
             TxtPassword.Clear();
         }
+
+        private void btn_apagar1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -92,6 +92,7 @@
             this.btn_apagar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_apagar1.TabIndex = 3;
             this.btn_apagar1.TabStop = false;
+            this.btn_apagar1.Click += new System.EventHandler(this.btn_apagar1_Click);
             // 
             // BtnLogin
             // 
