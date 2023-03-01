@@ -63,20 +63,18 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dgv_cam = new System.Windows.Forms.DataGridView();
+            this.dgv_checklist = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_Regresar2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_reporte_cam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_actualizar_cam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar_cam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_guardar_cam)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_cam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_checklist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Regresar2)).BeginInit();
             this.SuspendLayout();
             // 
             // label_encabezado
@@ -343,7 +341,6 @@
             this.label8.Size = new System.Drawing.Size(138, 15);
             this.label8.TabIndex = 13;
             this.label8.Text = "Lugar de la Camara:";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // textBox6
             // 
@@ -381,7 +378,6 @@
             this.label4.Size = new System.Drawing.Size(357, 22);
             this.label4.TabIndex = 12;
             this.label4.Text = "Elementos Reproductores de Imagen DVR";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox3
             // 
@@ -424,14 +420,13 @@
             this.textBox5.Size = new System.Drawing.Size(123, 20);
             this.textBox5.TabIndex = 16;
             // 
-            // dgv_cam
+            // dgv_checklist
             // 
-            this.dgv_cam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_cam.Location = new System.Drawing.Point(33, 481);
-            this.dgv_cam.Name = "dgv_cam";
-            this.dgv_cam.Size = new System.Drawing.Size(486, 189);
-            this.dgv_cam.TabIndex = 18;
-            this.dgv_cam.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_cam_CellContentClick);
+            this.dgv_checklist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_checklist.Location = new System.Drawing.Point(33, 481);
+            this.dgv_checklist.Name = "dgv_checklist";
+            this.dgv_checklist.Size = new System.Drawing.Size(486, 189);
+            this.dgv_checklist.TabIndex = 18;
             // 
             // dataGridView2
             // 
@@ -458,17 +453,6 @@
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
-            // btn_Regresar2
-            // 
-            this.btn_Regresar2.Image = global::prueba.Properties.Resources.regresar;
-            this.btn_Regresar2.Location = new System.Drawing.Point(12, 9);
-            this.btn_Regresar2.Name = "btn_Regresar2";
-            this.btn_Regresar2.Size = new System.Drawing.Size(44, 45);
-            this.btn_Regresar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Regresar2.TabIndex = 20;
-            this.btn_Regresar2.TabStop = false;
-            this.btn_Regresar2.Click += new System.EventHandler(this.btn_Regresar2_Click);
-            // 
             // frm_checklist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -477,9 +461,8 @@
             this.ClientSize = new System.Drawing.Size(1044, 689);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.btn_Regresar2);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dgv_cam);
+            this.Controls.Add(this.dgv_checklist);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label7);
@@ -497,17 +480,16 @@
             this.Name = "frm_checklist";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_checklist";
-            this.Load += new System.EventHandler(this.frm_checklist_Load_1);
+            this.Load += new System.EventHandler(this.frm_checklist_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_reporte_cam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_actualizar_cam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar_cam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_guardar_cam)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_cam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_checklist)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Regresar2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -531,8 +513,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DataGridView dgv_cam;
-        private System.Windows.Forms.PictureBox btn_Regresar2;
+        private System.Windows.Forms.DataGridView dgv_checklist;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox6;

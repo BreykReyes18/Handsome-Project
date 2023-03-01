@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btn_apagar1 = new System.Windows.Forms.PictureBox();
+            this.BtnLogin = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtUser = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_apagar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnLogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,13 +54,14 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Usuario:";
             // 
-            // textBox1
+            // TxtPassword
             // 
-            this.textBox1.Location = new System.Drawing.Point(277, 404);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(168, 20);
-            this.textBox1.TabIndex = 5;
+            this.TxtPassword.Location = new System.Drawing.Point(277, 404);
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.PasswordChar = '*';
+            this.TxtPassword.Size = new System.Drawing.Size(168, 20);
+            this.TxtPassword.TabIndex = 1;
+            this.TxtPassword.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -71,7 +72,6 @@
             this.label2.Size = new System.Drawing.Size(107, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Contraseña:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox5
             // 
@@ -83,26 +83,26 @@
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox4
+            // btn_apagar1
             // 
-            this.pictureBox4.Image = global::prueba.Properties.Resources.apagar;
-            this.pictureBox4.Location = new System.Drawing.Point(277, 452);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(83, 76);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
+            this.btn_apagar1.Image = global::prueba.Properties.Resources.apagar;
+            this.btn_apagar1.Location = new System.Drawing.Point(277, 452);
+            this.btn_apagar1.Name = "btn_apagar1";
+            this.btn_apagar1.Size = new System.Drawing.Size(83, 76);
+            this.btn_apagar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_apagar1.TabIndex = 3;
+            this.btn_apagar1.TabStop = false;
             // 
-            // pictureBox3
+            // BtnLogin
             // 
-            this.pictureBox3.Image = global::prueba.Properties.Resources.Login;
-            this.pictureBox3.Location = new System.Drawing.Point(133, 452);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(94, 76);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.BtnLogin.Image = global::prueba.Properties.Resources.Login;
+            this.BtnLogin.Location = new System.Drawing.Point(133, 452);
+            this.BtnLogin.Name = "BtnLogin";
+            this.BtnLogin.Size = new System.Drawing.Size(94, 76);
+            this.BtnLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnLogin.TabIndex = 2;
+            this.BtnLogin.TabStop = false;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // pictureBox2
             // 
@@ -124,12 +124,12 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox2
+            // TxtUser
             // 
-            this.textBox2.Location = new System.Drawing.Point(277, 307);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(168, 20);
-            this.textBox2.TabIndex = 9;
+            this.TxtUser.Location = new System.Drawing.Point(277, 307);
+            this.TxtUser.Name = "TxtUser";
+            this.TxtUser.Size = new System.Drawing.Size(168, 20);
+            this.TxtUser.TabIndex = 0;
             // 
             // frm_login
             // 
@@ -137,21 +137,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(484, 568);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TxtUser);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.btn_apagar1);
+            this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frm_login";
             this.Text = "frm_login";
-            this.Load += new System.EventHandler(this.frm_login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_apagar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -163,12 +162,12 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox BtnLogin;
+        private System.Windows.Forms.PictureBox btn_apagar1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtPassword;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtUser;
     }
 }

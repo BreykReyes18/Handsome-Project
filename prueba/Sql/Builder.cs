@@ -12,7 +12,7 @@ namespace prueba.Sql
         private readonly SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
         public void Build(string user, string password)
         {
-            builder.DataSource = "DESKTOP - S8V6F3S\\SQLEXPRESS";
+            builder.DataSource = "INFOR-I3\\SQLEXPRESS";
             builder.InitialCatalog = "DB_MAPR";
             builder.PersistSecurityInfo = true;
             builder.UserID = user;

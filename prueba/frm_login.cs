@@ -1,4 +1,5 @@
-﻿using System;
+﻿using prueba.Sql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,9 @@ namespace prueba
 {
     public partial class frm_login : Form
     {
+        private Builder builder;
+        private Connection connection;
+        private frm_menu fm;
         public object DATETIME { get; private set; }
 
         public frm_login()
@@ -20,24 +24,30 @@ namespace prueba
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void BtnLogin_Click(object sender, EventArgs e)
         {
-
+            builder = new Builder();
+            connection = new Connection();
+            builder.Build(TxtUser.Text, TxtPassword.Text);
+            if (connection.Connect())
+            {                
+                Clear();
+                MessageBox.Show("Conexión exitosa.");
+                connection.Disconnect();
+                fm = new frm_menu();
+                fm.ShowDialog();
+            }
+            else
+            {
+                Clear();
+                MessageBox.Show("Conexión no exitosa.");
+            }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void Clear()
         {
-
-        }
-
-        private void frm_login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
+            TxtUser.Clear();
+            TxtPassword.Clear();
         }
     }
 }
