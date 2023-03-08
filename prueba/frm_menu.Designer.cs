@@ -29,22 +29,24 @@
         private void InitializeComponent()
         {
             this.panel_contenedor1 = new System.Windows.Forms.Panel();
+            this.img_menu = new System.Windows.Forms.PictureBox();
             this.btn_mostrar = new System.Windows.Forms.Button();
             this.btn_Checklist = new System.Windows.Forms.Button();
             this.panel_opciones = new System.Windows.Forms.Panel();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.btn_apagar = new System.Windows.Forms.PictureBox();
-            this.img_menu = new System.Windows.Forms.PictureBox();
+            this.btnCam = new System.Windows.Forms.Button();
+            this.btnDvr = new System.Windows.Forms.Button();
             this.panel_contenedor1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_menu)).BeginInit();
             this.panel_opciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_apagar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img_menu)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_contenedor1
             // 
-            this.panel_contenedor1.BackColor = System.Drawing.Color.White;
+            this.panel_contenedor1.BackColor = System.Drawing.Color.Transparent;
             this.panel_contenedor1.Controls.Add(this.img_menu);
             this.panel_contenedor1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_contenedor1.Location = new System.Drawing.Point(188, 0);
@@ -53,16 +55,30 @@
             this.panel_contenedor1.TabIndex = 1;
             this.panel_contenedor1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_contenedor1_Paint);
             // 
+            // img_menu
+            // 
+            this.img_menu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.img_menu.Image = global::prueba.Properties.Resources.handsoll_BLOQ_IT;
+            this.img_menu.Location = new System.Drawing.Point(1, 40);
+            this.img_menu.Name = "img_menu";
+            this.img_menu.Size = new System.Drawing.Size(549, 312);
+            this.img_menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_menu.TabIndex = 0;
+            this.img_menu.TabStop = false;
+            this.img_menu.Click += new System.EventHandler(this.img_menu_Click);
+            // 
             // btn_mostrar
             // 
             this.btn_mostrar.AutoSize = true;
-            this.btn_mostrar.BackColor = System.Drawing.Color.White;
+            this.btn_mostrar.BackColor = System.Drawing.Color.Transparent;
             this.btn_mostrar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_mostrar.FlatAppearance.BorderSize = 0;
             this.btn_mostrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.btn_mostrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.btn_mostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_mostrar.ForeColor = System.Drawing.Color.Black;
+            this.btn_mostrar.ForeColor = System.Drawing.Color.White;
             this.btn_mostrar.Location = new System.Drawing.Point(0, 23);
             this.btn_mostrar.Name = "btn_mostrar";
             this.btn_mostrar.Size = new System.Drawing.Size(188, 31);
@@ -74,24 +90,26 @@
             // btn_Checklist
             // 
             this.btn_Checklist.AutoSize = true;
-            this.btn_Checklist.BackColor = System.Drawing.Color.White;
+            this.btn_Checklist.BackColor = System.Drawing.Color.Transparent;
             this.btn_Checklist.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Checklist.FlatAppearance.BorderSize = 0;
             this.btn_Checklist.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.btn_Checklist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.btn_Checklist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Checklist.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Checklist.ForeColor = System.Drawing.Color.White;
             this.btn_Checklist.Location = new System.Drawing.Point(0, 0);
             this.btn_Checklist.Name = "btn_Checklist";
             this.btn_Checklist.Size = new System.Drawing.Size(188, 23);
             this.btn_Checklist.TabIndex = 3;
             this.btn_Checklist.Text = "Check_List";
-            this.btn_Checklist.UseVisualStyleBackColor = true;
+            this.btn_Checklist.UseVisualStyleBackColor = false;
             this.btn_Checklist.Click += new System.EventHandler(this.btn_Checklist_Click);
             // 
             // panel_opciones
             // 
-            this.panel_opciones.BackColor = System.Drawing.Color.White;
+            this.panel_opciones.BackColor = System.Drawing.Color.Transparent;
+            this.panel_opciones.Controls.Add(this.btnDvr);
+            this.panel_opciones.Controls.Add(this.btnCam);
             this.panel_opciones.Controls.Add(this.btn_mostrar);
             this.panel_opciones.Controls.Add(this.btn_Checklist);
             this.panel_opciones.Controls.Add(this.btn_regresar);
@@ -127,25 +145,46 @@
             this.btn_apagar.TabStop = false;
             this.btn_apagar.Click += new System.EventHandler(this.btn_apagar_Click);
             // 
-            // img_menu
+            // btnCam
             // 
-            this.img_menu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.img_menu.Image = global::prueba.Properties.Resources.handsoll_BLOQ_IT;
-            this.img_menu.Location = new System.Drawing.Point(1, 40);
-            this.img_menu.Name = "img_menu";
-            this.img_menu.Size = new System.Drawing.Size(549, 312);
-            this.img_menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_menu.TabIndex = 0;
-            this.img_menu.TabStop = false;
-            this.img_menu.Click += new System.EventHandler(this.img_menu_Click);
+            this.btnCam.AutoSize = true;
+            this.btnCam.BackColor = System.Drawing.Color.Transparent;
+            this.btnCam.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCam.FlatAppearance.BorderSize = 0;
+            this.btnCam.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCam.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCam.ForeColor = System.Drawing.Color.White;
+            this.btnCam.Location = new System.Drawing.Point(0, 54);
+            this.btnCam.Name = "btnCam";
+            this.btnCam.Size = new System.Drawing.Size(188, 23);
+            this.btnCam.TabIndex = 4;
+            this.btnCam.Text = "Camaras";
+            this.btnCam.UseVisualStyleBackColor = false;
+            // 
+            // btnDvr
+            // 
+            this.btnDvr.AutoSize = true;
+            this.btnDvr.BackColor = System.Drawing.Color.Transparent;
+            this.btnDvr.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDvr.FlatAppearance.BorderSize = 0;
+            this.btnDvr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDvr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDvr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDvr.ForeColor = System.Drawing.Color.White;
+            this.btnDvr.Location = new System.Drawing.Point(0, 77);
+            this.btnDvr.Name = "btnDvr";
+            this.btnDvr.Size = new System.Drawing.Size(188, 23);
+            this.btnDvr.TabIndex = 5;
+            this.btnDvr.Text = "DVR";
+            this.btnDvr.UseVisualStyleBackColor = false;
             // 
             // frm_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::prueba.Properties.Resources._6548;
             this.ClientSize = new System.Drawing.Size(737, 391);
             this.Controls.Add(this.panel_contenedor1);
             this.Controls.Add(this.panel_opciones);
@@ -154,11 +193,11 @@
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel_contenedor1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.img_menu)).EndInit();
             this.panel_opciones.ResumeLayout(false);
             this.panel_opciones.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_apagar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img_menu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -171,5 +210,7 @@
         private System.Windows.Forms.Button btn_Checklist;
         private System.Windows.Forms.Panel panel_opciones;
         private System.Windows.Forms.PictureBox img_menu;
+        private System.Windows.Forms.Button btnDvr;
+        private System.Windows.Forms.Button btnCam;
     }
 }

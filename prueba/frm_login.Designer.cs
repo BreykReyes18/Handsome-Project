@@ -47,7 +47,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(140, 305);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 20);
@@ -66,7 +68,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(140, 402);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 20);
@@ -75,6 +79,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::prueba.Properties.Resources.handsoll_WP_black;
             this.pictureBox5.Location = new System.Drawing.Point(24, 12);
             this.pictureBox5.Name = "pictureBox5";
@@ -85,6 +90,7 @@
             // 
             // btn_apagar1
             // 
+            this.btn_apagar1.BackColor = System.Drawing.Color.Transparent;
             this.btn_apagar1.Image = global::prueba.Properties.Resources.apagar;
             this.btn_apagar1.Location = new System.Drawing.Point(277, 452);
             this.btn_apagar1.Name = "btn_apagar1";
@@ -96,6 +102,7 @@
             // 
             // BtnLogin
             // 
+            this.BtnLogin.BackColor = System.Drawing.Color.Transparent;
             this.BtnLogin.Image = global::prueba.Properties.Resources.Login;
             this.BtnLogin.Location = new System.Drawing.Point(133, 452);
             this.BtnLogin.Name = "BtnLogin";
@@ -107,6 +114,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::prueba.Properties.Resources.Contraseña;
             this.pictureBox2.Location = new System.Drawing.Point(24, 381);
             this.pictureBox2.Name = "pictureBox2";
@@ -117,6 +125,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::prueba.Properties.Resources.Usuario;
             this.pictureBox1.Location = new System.Drawing.Point(24, 279);
             this.pictureBox1.Name = "pictureBox1";
@@ -137,6 +146,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::prueba.Properties.Resources._6548;
             this.ClientSize = new System.Drawing.Size(484, 568);
             this.Controls.Add(this.TxtUser);
             this.Controls.Add(this.pictureBox5);

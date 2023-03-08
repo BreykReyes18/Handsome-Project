@@ -47,6 +47,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::prueba.Properties.Resources._6548;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgv_usuarios);
             this.Name = "frm_usuarios";

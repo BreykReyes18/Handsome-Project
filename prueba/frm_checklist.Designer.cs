@@ -64,7 +64,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.dgv_checklist = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -73,7 +72,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar_cam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_guardar_cam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_checklist)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -423,18 +421,10 @@
             // dgv_checklist
             // 
             this.dgv_checklist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_checklist.Location = new System.Drawing.Point(33, 481);
+            this.dgv_checklist.Location = new System.Drawing.Point(27, 488);
             this.dgv_checklist.Name = "dgv_checklist";
-            this.dgv_checklist.Size = new System.Drawing.Size(486, 189);
+            this.dgv_checklist.Size = new System.Drawing.Size(555, 189);
             this.dgv_checklist.TabIndex = 18;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(557, 481);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(476, 189);
-            this.dataGridView2.TabIndex = 21;
             // 
             // panel2
             // 
@@ -460,7 +450,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1044, 689);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgv_checklist);
             this.Controls.Add(this.textBox4);
@@ -488,7 +477,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar_cam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_guardar_cam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_checklist)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -533,7 +521,6 @@
         private System.Windows.Forms.PictureBox btn_guardar_cam;
         private System.Windows.Forms.PictureBox btn_actualizar_cam;
         private System.Windows.Forms.PictureBox btn_reporte_cam;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
